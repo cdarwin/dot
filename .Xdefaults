@@ -1,0 +1,7 @@
+UXTerm*background: black
+UXTerm*foreground: white
+UXTerm*colorBDMode: true
+UXTerm*colorBD: #ff0
+UXTerm*font: -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
+UXTerm*charClass:33:48,35-38:48,42-43:48,45-47:48,58:48,61:48,63-64:48,126:48
+UXTerm*cutchars: \\'`"()*;<>[]{|}

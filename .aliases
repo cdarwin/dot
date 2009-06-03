@@ -1,0 +1,31 @@
+alias s='sudo'
+alias svim='sudo vim'
+alias screen='screen -U'
+alias cd..='cd ..'
+alias df='df -h'
+alias du='du -h'
+alias du='du -sh'
+alias ls='ls -CF'
+alias la='ls -a'
+alias ll='ls -lah'
+alias lsd='ls -d */'
+alias l='ls'
+
+alias p-up='sudo pacman -Syy'
+alias p-up2='sudo pacman -Syu'
+alias p-search='pacman -Ss'
+alias p-install='sudo pacman -S'
+alias y-up='yaourt -Syy'
+alias y-up2='yaourt -Syu'
+alias y-search='yaourt -Ss'
+alias y-install='yaourt -S'
+
+alias radio-d='dtach -A /tmp/radio -r ctrl_l mplayer http://morpheus.neuro.fsu.edu:8000/darwin.mp3'
+alias radio-r='dtach -a /tmp/radio'
+
+if [ -f ~/.aliases.priv ]; then
+    . ~/.aliases.priv
+fi
+
+alias hella-stat='hellanzb status'
+alias hella-add='hellanzb enqueuenewzbin'
