@@ -11,7 +11,7 @@ EDITOR='vim'
 WEBKIT_IGNORE_SSL_ERRORS="1"
 
 if [ `tty` = "/dev/vc/1" ]; then
-startx
+	xinit
 fi
 
 PS1="%# "
