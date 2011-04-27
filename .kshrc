@@ -1,7 +1,8 @@
 :
-# ~/.kshrc 0.1 2009/10/19 cdarwin@X61s
+# ~/.kshrc 0.2 2011/04/26 cdarwin@X61s
 # credit: http://docsrv.sco.com/SHL_custom/The_Korn_shell_profile_and_kshrc.html
 #
+
 if [ -z "$VISUAL" -a -z "$EDITOR" ]; then
     set -o vi
     set -o vi-tabcomplete
@@ -12,7 +13,7 @@ if [ -f ~/.aliases ]; then
 fi
 
 if [ `tty` = "/dev/tty1" ]; then
-	xinit
+	exec xinit
 fi
 
 PS1="; "

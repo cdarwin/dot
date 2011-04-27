@@ -1,4 +1,8 @@
-export PATH=${HOME}/usr/local/bin:${PATH}
+#!/bin/sh
+# ~/.xinitrc 0.2 2011/04/26 cdarwin@X61s
+# 
+
+/usr/bin/xscreensaver -no-splash &
 
 while true
 do

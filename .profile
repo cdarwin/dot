@@ -1,8 +1,8 @@
 :
-# ~/.profile 0.1 2009/10/19 cdarwin@X61s
+# ~/.profile 0.2 2011/04/26 cdarwin@X61s
 # credit: http://docsrv.sco.com/SHL_custom/The_Korn_shell_profile_and_kshrc.html
 #
-PATH=$HOME/usr/local/bin:/opt/java/bin:$PATH:/usr/local/plan9/bin
+PATH=$HOME/usr/local/bin:/opt/java/bin:$PATH:/usr/local/sbin:/usr/sbin:/sbin:${HOME}/usr/local/plan9/bin
 export PATH
 
 if [ -z "$LOGNAME" ]; then
