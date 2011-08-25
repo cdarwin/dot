@@ -1,7 +1,7 @@
-
-" VimRC file custom made thank you ;-)
 " Setting the theme
 colorscheme lavish
+
+filetype plugin indent on
 
 " have syntax highlighting in terminals that support it
 if has('syntax') && (&t_Co > 2)
