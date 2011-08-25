@@ -7,7 +7,7 @@ MACPORT=/opt/local
 HPATH=$HOME/usr/local/bin
 [ -d $HPATH ] && PATH=$HPATH:$PATH
 GOROOT=$HOME/usr/local/go
-[ -d $GOROOT ] && PATH=$PATH:$GOROOT/bin
+[ -d $GOROOT ] && PATH=$PATH:$GOROOT/bin && export GOROOT
 ANDROOT=$HOME/usr/local/android-sdk-mac_86
 [ -d $ANDROOT ] && PATH=$PATH:$ANDROOT/tools:$ANDROOT/platform-tools
 export PATH
