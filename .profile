@@ -1,8 +1,15 @@
 :
-# ~/.profile 0.2 2011/04/26 cdarwin@X61s
+# ~/.profile 0.2 2011/08/25 cdarwin
 # credit: http://docsrv.sco.com/SHL_custom/The_Korn_shell_profile_and_kshrc.html
 #
-PATH=$HOME/usr/local/bin:/opt/java/bin:$PATH:/usr/local/sbin:/usr/sbin:/sbin:${HOME}/usr/local/plan9/bin
+MACPORT=/opt/local
+[ -d $MACPORT ] && PATH=$MACPORT/bin:$MACPORT/sbin:$PATH
+HPATH=$HOME/usr/local/bin
+[ -d $HPATH ] && PATH=$HPATH:$PATH
+GOROOT=$HOME/usr/local/go
+[ -d $GOROOT ] && PATH=$PATH:$GOROOT/bin
+ANDROOT=$HOME/usr/local/android-sdk-mac_86
+[ -d $ANDROOT ] && PATH=$PATH:$ANDROOT/tools:$ANDROOT/platform-tools
 export PATH
 
 if [ -z "$LOGNAME" ]; then
@@ -10,26 +17,16 @@ if [ -z "$LOGNAME" ]; then
     export LOGNAME
 fi
 
-MANPATH=$HOME/usr/local/share/man:$MANPATH
-export MANPATH
-PKG_CONFIG_PATH=$HOME/usr/local/lib/pkgconfig
-export PKG_CONFIG_PATH
-TZ=America/New_York
-export TZ
-HISTFILE=$HOME/.khistory
-export HISTFILE
-HISTSIZE=10000
-export HISTSIZE
-SAVEHIST=1000
-export SAVEHIST
-HOSTNAME=`hostname`
-export HOSTNAME
-PAGER=less
-export PAGER
-EDITOR=vim
-export EDITOR
-WEBKIT_IGNORE_SSL_ERRORS=1
-export WEBKIT_IGNORE_SSL_ERRORS
+export MANPATH=$HOME/usr/local/share/man:$MANPATH
+export PKG_CONFIG_PATH=$HOME/usr/local/lib/pkgconfig
+export TZ=America/New_York
+export HISTFILE=$HOME/.khistory
+export HISTSIZE=10000
+export SAVEHIST=1000
+export HOSTNAME=`hostname`
+export PAGER=less
+export EDITOR=vim
+export WEBKIT_IGNORE_SSL_ERRORS=1
 
 if [ -z "$PWD" ]; then
     PWD=$HOME
