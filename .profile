@@ -8,8 +8,10 @@ HPATH=$HOME/usr/local/bin
 [ -d $HPATH ] && PATH=$HPATH:$PATH
 GOROOT=$HOME/usr/local/go
 [ -d $GOROOT ] && PATH=$PATH:$GOROOT/bin && export GOROOT
-ANDROOT=$HOME/usr/local/android-sdk-mac_86
+ANDROOT=$HOME/usr/local/android-sdk-linux_x86
 [ -d $ANDROOT ] && PATH=$PATH:$ANDROOT/tools:$ANDROOT/platform-tools
+PLAN9=$HOME/usr/local/plan9
+[ -d $PLAN9 ] && PATH=$PATH:$PLAN9/bin
 export PATH
 
 if [ -z "$LOGNAME" ]; then
