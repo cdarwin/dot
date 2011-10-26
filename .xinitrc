@@ -2,7 +2,10 @@
 # ~/.xinitrc 0.2 2011/04/26 cdarwin@X61s
 # 
 
-/usr/bin/xscreensaver -no-splash &
+#/usr/bin/xscreensaver -no-splash &
+setxkbmap -option ctrl:nocaps
+xset +fp /usr/share/fonts/local
+xset fp rehash
 
 while true
 do
