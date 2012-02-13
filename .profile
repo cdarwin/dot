@@ -1,5 +1,5 @@
 :
-# ~/.profile 0.2 2011/08/25 cdarwin
+# ~/.profile 0.3 2012/02/12 cdarwin@X220i
 # credit: http://docsrv.sco.com/SHL_custom/The_Korn_shell_profile_and_kshrc.html
 #
 MACPORT=/opt/local
@@ -8,7 +8,7 @@ HPATH=$HOME/usr/local/bin
 [ -d $HPATH ] && PATH=$HPATH:$PATH
 GOROOT=$HOME/usr/local/go
 [ -d $GOROOT ] && PATH=$PATH:$GOROOT/bin && export GOROOT
-ANDROOT=$HOME/usr/local/android-sdk-linux_x86
+ANDROOT=/opt/android-sdk/
 [ -d $ANDROOT ] && PATH=$PATH:$ANDROOT/tools:$ANDROOT/platform-tools
 PLAN9=$HOME/usr/local/plan9
 [ -d $PLAN9 ] && PATH=$PATH:$PLAN9/bin
@@ -21,11 +21,11 @@ fi
 
 export MANPATH=$HOME/usr/local/share/man:$MANPATH
 export PKG_CONFIG_PATH=$HOME/usr/local/lib/pkgconfig
-export TZ=America/New_York
+export TZ=US/Pacific
 export HISTFILE=$HOME/.khistory
 export HISTSIZE=10000
 export SAVEHIST=1000
-export HOSTNAME=`hostname`
+export HOSTNAME=$(hostname)
 export PAGER=less
 export EDITOR=vim
 export WEBKIT_IGNORE_SSL_ERRORS=1
