@@ -1,2 +1,6 @@
 [ui]
 username = J Thigpen (cdarwin) <darwin@senet.us>
+editor = vim
+[extensions]
+hgext.bookmarks =
+hggit =
