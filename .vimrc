@@ -24,7 +24,10 @@ set showmatch
 set nomodeline
 
 " use indents of 4 spaces, and have them copied down lines:
-set shiftwidth=4
+" set shiftwidth=4
+" set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set shiftround
 set expandtab
 " This adds an indent for every { } combination not as
