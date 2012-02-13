@@ -1,0 +1,10 @@
+#!/bin/sh
+# ~/.ginitrc 0.1 2012/02/12 cdarwin@X220i
+# 
+
+#/usr/bin/xscreensaver -no-splash &
+setxkbmap -option ctrl:nocaps
+xset +fp /usr/share/fonts/local
+xset fp rehash
+
+exec ck-launch-session gnome-session
