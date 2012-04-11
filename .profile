@@ -1,21 +1,17 @@
-:
-# ~/.profile 0.3 2012/02/12 cdarwin@X220i
-# credit: http://docsrv.sco.com/SHL_custom/The_Korn_shell_profile_and_kshrc.html
-#
 MACPORT=/opt/local
 [ -d $MACPORT ] && PATH=$MACPORT/bin:$MACPORT/sbin:$PATH
 HPATH=$HOME/usr/local/bin
 [ -d $HPATH ] && PATH=$HPATH:$PATH
 GOROOT=$HOME/usr/local/go
 [ -d $GOROOT ] && PATH=$PATH:$GOROOT/bin && export GOROOT
-ANDROOT=/opt/android-sdk/
+ANDROOT=/opt/android-sdk
 [ -d $ANDROOT ] && PATH=$PATH:$ANDROOT/tools:$ANDROOT/platform-tools
-PLAN9=$HOME/usr/local/plan9
+PLAN9=/usr/local/plan9
 [ -d $PLAN9 ] && PATH=$PATH:$PLAN9/bin
 export PATH
 
 if [ -z "$LOGNAME" ]; then
-    LOGNAME=`logname`
+    LOGNAME=$(logname)
     export LOGNAME
 fi
 
@@ -45,3 +41,7 @@ case $LOGNAME in
     *)  PS1="; " ;;
 esac
 export PS1
+export LANGUAGE="en_US:en"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
