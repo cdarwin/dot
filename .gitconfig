@@ -1,0 +1,5 @@
+[user]
+	email = darwin@senet.us
+	name = Jason Thigpen
+[core]
+	excludesfile = /home/cdarwin/.gitignore
