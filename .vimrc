@@ -21,3 +21,4 @@ map ,# :s/^/#/<CR>
 map ,/ :s/^/\/\//<CR>
 map ,< :s/^\(.*\)$/<!-- \1 -->/<CR><Esc>:nohlsearch<CR>
 map ,* :s/^\(.*\)$/\/\* \1 \*\//<CR><Esc>:nohlsearch<CR>
+map <F2> :NERDTreeToggle<CR>

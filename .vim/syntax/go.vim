@@ -1,0 +1,1 @@
+/home/cdarwin/usr/local/go/misc/vim/syntax/go.vim
