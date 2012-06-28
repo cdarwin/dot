@@ -1,1 +1,0 @@
-/home/cdarwin/usr/local/go/misc/vim/ftdetect/gofiletype.vim
