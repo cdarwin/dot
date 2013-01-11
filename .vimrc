@@ -3,7 +3,7 @@ colorscheme mayansmoke
 syntax on
 set t_Co=256
 set background=light
-set mouse=r
+set mouse=n
 set nocp
 set wildmode=list:longest,full
 set showmode
