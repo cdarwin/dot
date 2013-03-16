@@ -1,6 +1,7 @@
 alias s='sudo'
-alias svim='sudo vim'
+alias svim='sudo $EDITOR'
 alias .v="$EDITOR ~/.vimrc"
+alias vim='$EDITOR'
 alias up='cd ..'
 alias df='df -h'
 alias du='du -sh'
