@@ -2,7 +2,8 @@ MACPORT=/opt/local
 [ -d $MACPORT ] && PATH=$MACPORT/bin:$MACPORT/sbin:$PATH
 HPATH=$HOME/usr/local/bin
 [ -d $HPATH ] && PATH=$HPATH:$PATH
-GOROOT=$HOME/usr/local/go
+#GOROOT=$HOME/usr/local/go
+GOROOT=/usr/lib/go
 [ -d $GOROOT ] && PATH=$PATH:$GOROOT/bin && export GOROOT
 ANDROOT=/opt/android-sdk
 [ -d $ANDROOT ] && PATH=$PATH:$ANDROOT/tools:$ANDROOT/platform-tools
@@ -45,3 +46,6 @@ export LANGUAGE="en_US:en"
 export LC_MESSAGES="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
