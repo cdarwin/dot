@@ -31,4 +31,4 @@ export LC_CTYPE="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
 
 # Homebrew extras
-export PATH=$BREW/share/python:$BREW/opt/ruby/bin:$BREW/share/npm/bin:$PATH
+export PATH=$BREW/share/npm/bin:$PATH
