@@ -23,5 +23,7 @@ POWERLINE="$HOME/workspace/powerline/powerline/bindings/bash/powerline.sh"
 if [ -s $POWERLINE -a -r $POWERLINE ]; then
     source $POWERLINE
 else
-    export PS1='$(__git_ps1 "(%s)")\W> '
+    GIT_PS1_SHOWUNTRACKEDFILES='nonempty'
+    GIT_PS1_SHOWUPSTREAM='verbose'
+    export PS1='\u@\h:\W $(__git_ps1 "(%s)")>'
 fi
