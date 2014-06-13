@@ -19,11 +19,12 @@ elif [ $UNAME = "Darwin" -a -n $(brew --prefix) ]; then
     fi
 fi
 
-POWERLINE="$HOME/workspace/powerline/powerline/bindings/bash/powerline.sh"
-if [ -s $POWERLINE -a -r $POWERLINE ]; then
-    source $POWERLINE
+GIT_PS1_SHOWUNTRACKEDFILES='nonempty'
+GIT_PS1_SHOWUPSTREAM='verbose'
+if [[ -n $SSH_TTY ]]; then
+    export PS1='\u@\h:\W $(__git_ps1 "(%s)")> '
 else
-    GIT_PS1_SHOWUNTRACKEDFILES='nonempty'
-    GIT_PS1_SHOWUPSTREAM='verbose'
-    export PS1='\u@\h:\W $(__git_ps1 "(%s)")>'
+    export PS1='\W $(__git_ps1 "(%s)")> '
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
